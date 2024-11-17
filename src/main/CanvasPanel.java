@@ -7,8 +7,8 @@ import java.awt.*;
 
 public class CanvasPanel extends JPanel implements Runnable {
 
-    public final int screenWidth = 900;
-    public final int screenHeight = 900;
+    public final int screenWidth = 1200;
+    public final int screenHeight = 1200;
 
     public MouseHandler mouse = new MouseHandler();
 
@@ -54,6 +54,7 @@ public class CanvasPanel extends JPanel implements Runnable {
 
 
             if(delta >= 1) {
+
 
                 repaint();
                 delta--;

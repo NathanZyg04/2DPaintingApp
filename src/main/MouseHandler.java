@@ -5,9 +5,14 @@ import java.awt.event.MouseListener;
 
 public class MouseHandler implements MouseListener {
 
+    public int screenX;
+    public int screenY;
+
     @Override
     public void mouseClicked(MouseEvent e) {
-
+        screenX = e.getX();
+        screenY = e.getY();
+        System.out.println("X: " + screenX + " Y: " + screenY);
     }
 
     @Override

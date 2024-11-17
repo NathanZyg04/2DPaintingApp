@@ -35,9 +35,6 @@ public class gridManager {
 
             for(int j = 0;j<gridYcount;j++)
             {
-                //g2.drawLine(0,i*gridSize,900,i*gridSize);
-                //g2.drawRect(i*gridSize,j*gridSize,gridSize,gridSize);
-                //g2.fillRect(i*gridSize,j*gridSize,gridSize,gridSize);
 
             }
 
@@ -45,16 +42,15 @@ public class gridManager {
 
         g2.setColor(Color.BLUE);
         //g2.draw(new Rectangle(48,48));
-        for(int i = 0;i<gridXcount;i++) {
+        for(int i = 0;i<=gridXcount;i++) {
 
-            for(int j = 0;j<gridYcount;j++)
+            for(int j = 0;j<=gridYcount;j++)
             {
                 // X lines
-                g2.drawLine(0,i*gridSize,900,i*gridSize);
+                g2.drawLine(0,i*gridSize,gridSize*gridXcount,i*gridSize);
                 // Y lines
-                g2.drawLine(i*gridSize,0,i*gridSize,900);
-               // g2.drawRect(i*gridSize,j*gridSize,gridSize,gridSize);
-                //g2.fillRect(i*gridSize,j*gridSize,gridSize,gridSize);
+                g2.drawLine(i*gridSize,0,i*gridSize,gridSize*gridYcount);
+
 
             }
 
