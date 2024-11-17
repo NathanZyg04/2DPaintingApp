@@ -4,6 +4,14 @@ import javax.swing.*;
 
 public class main {
 
+    /*
+
+    - get the mouse pos within the grid and fill that rectangle with the color
+
+
+
+     */
+
     public static void main(String[] args) {
 
         JFrame window = new JFrame();
