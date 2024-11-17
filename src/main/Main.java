@@ -2,7 +2,7 @@ package main;
 
 import javax.swing.*;
 
-public class main {
+public class Main {
 
     /*
 
