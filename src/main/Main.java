@@ -19,9 +19,9 @@ public class Main {
         window.setResizable(true);
         window.setTitle("2D Painting App");
 
-        CanvasPanel panel = new CanvasPanel();
+        CanvasPanel panel = new CanvasPanel(window);
 
-        window.add(panel);
+
         window.pack();
         window.setLocationRelativeTo(null);
         window.setVisible(true);
