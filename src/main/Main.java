@@ -6,10 +6,13 @@ public class Main {
 
     /*
 
-    - get the mouse pos within the grid and fill that rectangle with the color
-
-
-
+    TO:DO
+        - Implement FileDialogHandler functionality
+        - Add number key binds to the current tile for selection
+        - Add more key binds for filling in canvas
+        - implement the canvas so its as big as the game's is
+            * use the same camera and movement mechanics
+        - clean up UI
      */
 
     public static void main(String[] args) {
