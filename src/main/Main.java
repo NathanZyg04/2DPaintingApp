@@ -1,6 +1,7 @@
 package main;
 
 import javax.swing.*;
+import java.awt.*;
 
 public class Main {
 
@@ -18,6 +19,7 @@ public class Main {
     public static void main(String[] args) {
 
         JFrame window = new JFrame();
+        window.setLayout(new FlowLayout());
         window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         window.setResizable(true);
         window.setTitle("2D Painting App");
