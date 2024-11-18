@@ -14,6 +14,8 @@ public class Main {
         - implement the canvas so its as big as the game's is
             * use the same camera and movement mechanics
         - clean up UI
+
+
      */
 
     public static void main(String[] args) {

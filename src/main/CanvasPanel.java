@@ -17,8 +17,8 @@ public class CanvasPanel extends JPanel implements Runnable {
     int gridSize = 48;
 
     // the cols and rows within the painting canvas
-    final int gridCols = 20;
-    final int gridRows = 20;
+    final int gridCols = 16;
+    final int gridRows = 16;
 
     public MouseHandler mouse = new MouseHandler(this,paletteCols,paletteRows,gridSize,gridCols,gridRows);
 
@@ -52,7 +52,7 @@ public class CanvasPanel extends JPanel implements Runnable {
         this.setDoubleBuffered(true);
         this.addMouseListener(mouse);
 
-        fileHandle = new FileDialogHandler(window);
+        fileHandle = new FileDialogHandler(window, mouse);
 
         saveAsNew.setFont(new Font("Arial", Font.BOLD, 20));
         openFile.setFont(new Font("Arial", Font.BOLD, 20));
@@ -88,7 +88,7 @@ public class CanvasPanel extends JPanel implements Runnable {
     }
 
     public void saveAsNewAction(ActionEvent e) {
-        fileHandle.saveFile();
+        fileHandle.saveAsFile();
     }
 
     public void saveAction(ActionEvent e) {

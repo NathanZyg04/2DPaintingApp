@@ -33,8 +33,8 @@ public class gridManager {
     public int tileY;
 
     // screen location offeset for the image palette
-    private final int paletteXoffset = 100;
-    private final int paletteYoffset = 1050;
+    private final int paletteXoffset = 10;
+    private final int paletteYoffset = 770;
 
     public Point[][] imagePos;
 

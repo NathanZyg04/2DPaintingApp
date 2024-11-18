@@ -25,8 +25,8 @@ public class MouseHandler implements MouseListener {
     public int[][] tileArray;
     public int imageIndex;
 
-    private int gridCols;
-    private int gridRows;
+    public int gridCols;
+    public int gridRows;
 
 
     public MouseHandler(CanvasPanel cp,int paletteCols, int paletteRows, int gridSize, int gridCols, int gridRows) {
