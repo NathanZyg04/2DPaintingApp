@@ -196,6 +196,22 @@ public class gridManager {
 
 
 
+    public void clearScreen(Graphics2D g2) {
+
+        for(int i = 0;i<gridRows;i++) {
+
+            for(int j = 0;j<gridCols;j++)
+            {
+
+                g2.drawImage(tileImageArray[0].image,i*gridSize,j*gridSize,gridSize,gridSize,null);
+
+            }
+        }
+    }
+
+
+
+
 
 
 }

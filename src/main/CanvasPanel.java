@@ -37,6 +37,8 @@ public class CanvasPanel extends JPanel implements Runnable {
 
     public JFrame window;
 
+    public JButton clearButton = new JButton("Clear");
+
 
 
     public JDialog fileDialog;
@@ -65,8 +67,16 @@ public class CanvasPanel extends JPanel implements Runnable {
 
         fileMenu.setFont(new Font("Arial", Font.BOLD, 20));
 
+
+        clearButton.addActionListener(e -> clearButtonAction(e));
+        //clearButton.setLocation(800,300);
+
         window.setJMenuBar(menuBar);
+
+        this.add(clearButton);
         window.add(this);
+
+
 
 
         // functionality for menu bar items
@@ -77,6 +87,17 @@ public class CanvasPanel extends JPanel implements Runnable {
 
         fileDialog = new JDialog(window,"Enter File Name", true);
 
+    }
+
+
+    // Action for the clear button
+    private void clearButtonAction(ActionEvent e) {
+
+        for(int i = 0;i<gridCols;i++) {
+            for(int j = 0;j<gridRows;j++){
+                mouse.tileArray[i][j] = 0;
+            }
+        }
     }
 
     // Action methods for menu bar items
